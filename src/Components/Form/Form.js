@@ -6,11 +6,14 @@ function Form(props) {
 
   const submitPrompt = event => {
     event.preventDefault()
-    props.addPrompt(prompt)
   
+    props.addPrompt(prompt)
+    clearInputs()
   }
 
- 
+  const clearInputs = () => {
+    setPrompt('')
+  }
 
   return (
     <form>
