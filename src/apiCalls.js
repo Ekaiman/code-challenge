@@ -12,7 +12,7 @@ function aiFetchResponse(prompt) {
     presence_penalty: 0.0
   }
 
-  fetch(url, {
+  return fetch(url, {
     method: 'POST',
     headers: {
       Authorization: bearer,
@@ -20,13 +20,11 @@ function aiFetchResponse(prompt) {
     },
     body: JSON.stringify(data)
   })
-    .then(response => {
-      return response.json()
-    })
-    .then(data => console.log(data))
-    .catch(error => {
-      console.log('Something bad happened ' + error)
-    })
+    .then(response => response.json())
+    // .then(data => console.log(data))
+    // .catch(error => {
+    //   console.log('Something bad happened ' + error)
+    // })
 }
 
 export default aiFetchResponse
