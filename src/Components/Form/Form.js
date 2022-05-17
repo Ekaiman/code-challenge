@@ -4,6 +4,14 @@ import { useState } from 'react'
 function Form(props) {
   const [prompt, setPrompt] = useState('')
 
+  const submitPrompt = event => {
+    event.preventDefault()
+    props.addPrompt(prompt)
+  
+  }
+
+ 
+
   return (
     <form>
       <input
@@ -17,7 +25,7 @@ function Form(props) {
         }}
       />
 
-      <button >SUBMIT</button>
+      <button onClick={submitPrompt}>SUBMIT</button>
     </form>
   )
 }
