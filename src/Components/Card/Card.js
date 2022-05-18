@@ -9,7 +9,7 @@ const Card = ({ response, prompt, deletePrompt, id }) => {
           onClick={() => {
             deletePrompt(id)
           }}
-          id='close'
+          className='close'
         >
           close
         </button>
