@@ -30,7 +30,7 @@ function App() {
 
   return (
     <main className='App'>
-      <h1>Write a commerical!</h1>
+      <h1 className='title'>Write a commerical!</h1>
       {err && <h1>{err}</h1>}
       {!err && <div>
         

@@ -17,7 +17,7 @@
   flex-direction: row-reverse;
 }
 
-#close {
+.close {
   overflow: hidden;
   position: relative;
   border: none;
@@ -32,17 +32,17 @@
   cursor: pointer;
 }
 
-#close:focus {
+.close:focus {
   outline: solid 0 transparent;
   box-shadow: 0 0 0 2px #8ed0f9;
 }
 
-#close:hover {
+.close:hover {
   background: rgba(29, 161, 142, 0.1);
 }
 
-#close:before,
-#close:after {
+.close:before,
+.close:after {
   position: absolute;
   top: 15%;
   left: calc(50% - 0.0625em);
@@ -54,6 +54,6 @@
   content: '';
 }
 
-#close:after {
+.close:after {
   transform: rotate(-45deg);
 }

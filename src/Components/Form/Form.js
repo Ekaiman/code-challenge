@@ -27,7 +27,7 @@ function Form(props) {
         required
       />
 
-      <button onClick={submitPrompt} disabled={!prompt}>SUBMIT</button>
+      <button onClick={submitPrompt} disabled={!prompt} className='submit-button'>SUBMIT</button>
     </form>
   )
 }
