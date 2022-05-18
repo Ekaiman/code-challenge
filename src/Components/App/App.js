@@ -22,6 +22,7 @@ function App() {
   return (
     <main className='App'>
       <h1>Write a commerical!</h1>
+      {responses.length === 0 && <h2>Have an idea and need a commercial? Enter a prompt an recieve a commercial!</h2>}
       <Form addPrompt={addPrompt} />
       <CardHolder responses={responses}/>
     </main>
