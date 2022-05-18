@@ -1,22 +1,26 @@
 import './App.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import aiFetchResponse from '../../apiCalls'
 import Form from '../Form/Form'
 import CardHolder from '../CardHolder/CardHolder'
 
 function App() {
   const [responses, setResponses] = useState([])
+  const [err, setErr] = useState()
 
   const addPrompt = prompt => {
-    aiFetchResponse(prompt).then(data => {
-      console.log(data)
-      const newResponse = {
-        resp: data.choices[0].text,
-        prom: prompt,
-        id: data.id
-      }
-      setResponses([...responses, newResponse])
-    })
+    aiFetchResponse(prompt)
+      .then(data => {
+        const newResponse = {
+          resp: data.choices[0].text,
+          prom: prompt,
+          id: data.id
+        }
+        setResponses([...responses, newResponse])
+      })
+      .catch(error => {
+        setErr('Something bad happened. ' + error + '. Please try again later!')
+      })
   }
 
   const deletePrompt = id => {
@@ -27,6 +31,9 @@ function App() {
   return (
     <main className='App'>
       <h1>Write a commerical!</h1>
+      {err && <h1>{err}</h1>}
+      {!err && <div>
+        
       {responses.length === 0 && (
         <h2>
           Have an idea and need a commercial? Enter a prompt an recieve a
@@ -40,6 +47,7 @@ function App() {
       )}
       <Form addPrompt={addPrompt} />
       <CardHolder responses={responses} deletePrompt={deletePrompt} />
+      </div>}
     </main>
   )
 }
