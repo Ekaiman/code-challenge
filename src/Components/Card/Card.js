@@ -1,11 +1,12 @@
 import React from "react";
+import './Card.css'
 
-const Card = () => { 
+const Card = ({response, prompt, id}) => { 
 
   return (
-    <div>
-      <h2>Your idea:</h2>
-      <h2>Your commercial: </h2>
+    <div className='card'>
+      <h2 className='card-text'>Your idea: {prompt} </h2>
+      <h2 className='card-text'>Your commercial: {response}</h2>
     </div>
   )
 }
