@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple steps.
    ``` 
  
 # Deployment
-Skip installation by using this deployment link to view the application: [Rancid Tomatillos](https://gaping-hammer.surge.sh)
+Skip installation by using this deployment link to view the application: [Commercial Makers](https://gaping-hammer.surge.sh)
 
 - No installlation is needed  with the provided deploy link.
 
