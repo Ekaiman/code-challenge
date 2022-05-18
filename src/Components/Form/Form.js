@@ -6,7 +6,6 @@ function Form(props) {
 
   const submitPrompt = event => {
     event.preventDefault()
-  
     props.addPrompt(prompt)
     clearInputs()
   }
@@ -24,11 +23,11 @@ function Form(props) {
         value={prompt}
         onChange={event => {
           setPrompt(event.target.value)
-          
         }}
+        required
       />
 
-      <button onClick={submitPrompt}>SUBMIT</button>
+      <button onClick={submitPrompt} disabled={!prompt}>SUBMIT</button>
     </form>
   )
 }
