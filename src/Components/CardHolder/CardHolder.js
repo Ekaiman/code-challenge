@@ -15,8 +15,7 @@ const CardHolder = ({ responses, deletePrompt }) => {
     )
   })
 
-  const reversed = cards.reverse()
-  return <div className='card-holder'>{reversed}</div>
+  return <div className='card-holder'>{cards}</div>
 }
 
 export default CardHolder

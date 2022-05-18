@@ -16,7 +16,7 @@ function App() {
           prom: prompt,
           id: data.id
         }
-        setResponses([...responses, newResponse])
+        setResponses([newResponse, ...responses])
       })
       .catch(error => {
         setErr('Something bad happened. ' + error + '. Please try again later!')
