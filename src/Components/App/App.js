@@ -2,6 +2,7 @@ import './App.css'
 import { useEffect, useState } from 'react'
 import aiFetchResponse from '../../apiCalls'
 import Form from '../Form/Form'
+import CardHolder from '../CardHolder/CardHolder'
 
 function App() {
   const [responses, setResponses] = useState([])
@@ -22,6 +23,7 @@ function App() {
     <main className='App'>
       <h1>Write a commerical!</h1>
       <Form addPrompt={addPrompt} />
+      <CardHolder responses={responses}/>
     </main>
   )
 }
