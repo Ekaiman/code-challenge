@@ -4,7 +4,7 @@
 This Commercial Maker is an web application that uses the GTP-3 AI. Users can enter a simple prompt and recieve an idea for a commercial! As users add new prompts and recieve new commercials, they are ordered in newest to oldest. Users also have the ability to delete a commercial from their list. 
 
 ![Gif User Flow](https://media.giphy.com/media/zuROSTRMRJGI0mXD9r/giphy.gif)
-
+![Gif Delete Card](https://media.giphy.com/media/YRxOpu5ptoX7OAGBKS/giphy.gif)
 
 # Learning Goals
 - GPT-3
