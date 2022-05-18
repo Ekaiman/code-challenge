@@ -1,0 +1,14 @@
+{
+  "id": "cmpl-59Im9IVRGCsVWdXy4Ed7RhlvlBtHt",
+  "object": "text_completion",
+  "created": 1652404173,
+  "model": "text-curie-001",
+  "choices": [
+    {
+      "text": "Looking for shoes that fit? Check out our wide selection of shoes that are too big! We have shoes for men, women, and kids that will fit everyone's needs. Whether you're looking for a comfortable pair of sneakers to wear at the gym or a dress shoe that will make you look taller, we've got you covered.",
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ]
+}
