@@ -1,5 +1,12 @@
 # Commercial Maker
 
+# Deployment
+Skip installation by using this deployment link to view the application: [Commercial Maker](https://calculating-feather.surge.sh/)
+
+- No installlation is needed  with the provided deploy link.
+
+- The application was deployed using [Surge](https://surge.sh/).
+
 ## Overview
 This Commercial Maker is an web application that uses the GTP-3 AI. Users can enter a simple prompt and recieve an idea for a commercial! As users add new prompts and recieve new commercials, they are ordered in newest to oldest. Users also have the ability to delete a commercial from their list. 
 
@@ -32,13 +39,6 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm start
    ``` 
- 
-# Deployment
-Skip installation by using this deployment link to view the application: [Commercial Maker](https://calculating-feather.surge.sh/)
-
-- No installlation is needed  with the provided deploy link.
-
-- The application was deployed using [Surge](https://surge.sh/).
 
 # Contributors
 - [Emili Kaiman](https://github.com/Ekaiman)
